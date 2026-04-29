@@ -1,0 +1,43 @@
+# mkdocs.yml
+site_name: W.S.S Wiki  # 网站左上角的标题
+site_description: 暖源社 | W.S.S官方Wiki # 网站描述
+site_author: CHINAGUOGE # 作者
+
+# 仓库配置 (可选，会在右上角显示 GitHub 图标)
+repo_url: https://github.com/CHINAGUOGE/W.S.S-Wiki
+edit_uri: edit/main/docs/ # 点击“编辑此页”时跳转的地址
+
+# 核心配置：启用 Material 主题
+theme:
+  name: material
+  language: zh # 设置为中文
+  features:
+    - navigation.tabs # 开启顶部导航栏
+    - navigation.sections # 开启侧边栏分组
+    - navigation.footer # 开启页脚
+    - search.suggest # 搜索建议
+    - search.highlight # 搜索高亮
+  palette:
+    # 自动切换深色/浅色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+
+# 导航栏配置
+nav:
+  - 首页: index.md
+
+# 插件配置 (以后我们会在这里加插件)
+plugins:
+  - search
