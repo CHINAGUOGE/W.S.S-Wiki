@@ -1,0 +1,20 @@
+name: Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - master  # 注意：因为你刚才推送的是 master 分支，这里要写 master
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs-material  # 如果你用了 Material 主题，需要安装它
+      - run: mkdocs gh-deploy --force
