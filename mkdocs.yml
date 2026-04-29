@@ -4,7 +4,7 @@ repo_url: https://github.com/CHINAGJOGE/W.S.S-Wiki
 
 theme:
   name: material
-  logo: docs/assets/logo1.png 
+  logo: !INCLUDE docs/assets/logo1.png
   language: zh
   palette:
     # 自动切换深色/浅色模式
