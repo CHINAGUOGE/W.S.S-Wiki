@@ -1,0 +1,27 @@
+name: Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - master  # 你的主分支是 master
+
+permissions:
+  contents: write # 赋予写入权限，以便推送到 gh-pages 分支
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 第一步：检出代码
+      - uses: actions/checkout@v4
+
+      # 第二步：设置 Python 环境
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      # 第三步：安装 MkDocs 和 Material 主题 (这一步至关重要！)
+      - run: pip install mkdocs mkdocs-material
+
+      # 第四步：执行部署 (这会自动编译并推送到 gh-pages 分支)
+      - run: mkdocs gh-deploy --force
