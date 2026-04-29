@@ -48,13 +48,3 @@ markdown_extensions:
 plugins:
   - search
   - with-pdf
-  - admonition
-  - attr_list
-  - pymdownx.blocks.tab
-  - pymdownx.blocks.html
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - md_in_html
