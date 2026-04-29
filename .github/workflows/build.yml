@@ -23,5 +23,10 @@ jobs:
       # 第三步：安装 MkDocs 和 Material 主题 (这一步至关重要！)
       - run: pip install mkdocs mkdocs-material
 
+      - run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs-material[imaging]  # 这是主题和图片处理
+          pip install mkdocs-with-pdf         # 这是刚才新加的 PDF 插件
+
       # 第四步：执行部署 (这会自动编译并推送到 gh-pages 分支)
       - run: mkdocs gh-deploy --force
