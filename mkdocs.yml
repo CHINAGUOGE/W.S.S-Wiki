@@ -4,8 +4,6 @@ repo_url: https://github.com/CHINAGJOGE/W.S.S-Wiki
 
 theme:
   name: material
-  logo: theme:
-  name: material
   logo: /assets/logo1.png
   language: zh
   palette:
