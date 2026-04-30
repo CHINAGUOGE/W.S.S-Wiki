@@ -1,10 +1,10 @@
 site_name: W.S.S-Wiki
 site_url: https://wiki.51320721.xyz
-repo_url: https://github.com/CHINAGJOGE/W.S.S-Wiki
+repo_url: https://github.com/CHINAGUOGE/W.S.S-Wiki
 
 theme:
   name: material
-  logo: docs/assets/logo.png 
+  logo: /assets/logo1.png
   language: zh
   palette:
     # 自动切换深色/浅色模式
@@ -48,13 +48,3 @@ markdown_extensions:
 plugins:
   - search
   - with-pdf
-  - admonition
-  - attr_list
-  - pymdownx.blocks.tab
-  - pymdownx.blocks.html
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - md_in_html
