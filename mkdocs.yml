@@ -7,40 +7,42 @@ theme:
   logo: /assets/logo1.png
   language: zh
   palette:
-    # 自动切换深色/浅色模式
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: 切换至深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: 切换至浅色模式
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.top # 回到顶部按钮
+    - navigation.top
     - search.suggest
     - search.highlight
-    - content.code.copy # 代码块一键复制
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
-  - admonition # 提示块
-  - pymdownx.details # 可折叠的提示块
+  - admonition          # 提示块
+  - pymdownx.details    # 可折叠提示块
   - pymdownx.superfences # 嵌套代码块
   - pymdownx.tabbed:
-      alternate_style: true # 现代选项卡
+      alternate_style: true
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.inlinehilite
+  - pymdownx.inlinehilite # 支持内联代码样式
   - pymdownx.snippets
-  - attr_list
+  - attr_list           # 用于实现黑幕 [文字]{.heimu}
   - md_in_html
   - toc:
       permalink: true
