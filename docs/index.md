@@ -8,6 +8,26 @@
 
 ---
 
+<div class="grid cards" markdown>
+
+- :material-clock-fast:{ .lg .middle } 暂无
+  
+  ---
+  
+  测试用
+  
+  [:octicons-arrow-right-24: 测试](#)
+
+- :fontawesome-brands-markdown:{ .lg .middle } Markdown语法教程
+  
+  ---
+  
+  我们制作了社区与Wiki通用的Markdown语法教程
+  
+  [:octicons-arrow-right-24: 点击查看](#)
+
+</div>
+
 ### 由GES运营的W.S.S矩阵
 
 [**W.S.S 暖源社论坛**](https://our.51320721.xyz)
