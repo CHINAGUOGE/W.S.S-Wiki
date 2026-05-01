@@ -7,7 +7,6 @@
 > 本站正在测试阶段
 
 ---
-
 <div class="grid cards" markdown>
 
 - :material-clock-fast:{ .lg .middle } 暂无
@@ -17,14 +16,14 @@
   测试用
   
   [:octicons-arrow-right-24: 测试](#)
-
+  
 - :fontawesome-brands-markdown:{ .lg .middle } Markdown语法教程
   
   ---
   
   我们制作了社区与Wiki通用的Markdown语法教程
   
-  [:octicons-arrow-right-24: 点击查看](#)
+  [:octicons-arrow-right-24: 点击查看](https://chinaguoge.github.io/W.S.S-Wiki/%E5%B8%AE%E5%8A%A9/markdown%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/)
 
 </div>
 

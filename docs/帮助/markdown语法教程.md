@@ -210,8 +210,8 @@ _(注：简码支持取决于具体的应用程序)_
 
 ---
 
-我们提供了PDF及Markdown格式的文件喵
-md格式：
-[Markdown 语法指南.md](https://api.51320721.xyz/download/Markdown-md.md)
-PDF格式：
+我们提供了PDF及Markdown格式的文件喵 \
+md格式： \
+[Markdown 语法指南.md](https://api.51320721.xyz/download/Markdown-md.md) \
+PDF格式： \
 [Markdown 语法指南.pdf"](https://api.51320721.xyz/download/Markdown-pdf.pdf)
