@@ -33,11 +33,17 @@ theme:
     - content.code.annotate       # 代码注释支持
 
 extra:
+  copyright: |
+    Copyright &copy; 2026 GES | W.S.S 矩阵.
+    <br>
+    本站由Guoge提供技术支持
   social:
     - icon: fontawesome/brands/github 
-      link: https://github.com/CHINAGUOGE
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:your-email@example.com
+      link: https://github.com/CHINAGUOGE/W.S.S-Wiki
+    - icon: fontawesome/brands/qq
+      link: https://qm.qq.com/q/NifMztv7GY
+    - icon: fontawesome/solid/envelope
+      link: mailto:guoge@51320721.xyz
 
 extra_css:
   - stylesheets/extra.css
