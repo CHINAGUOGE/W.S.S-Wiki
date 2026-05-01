@@ -4,7 +4,7 @@ repo_url: https://github.com/CHINAGUOGE/W.S.S-Wiki
 
 theme:
   name: material
-  logo: /assets/logo1.png
+  logo: assets/logo1.png
   language: zh
   palette:
     - media: "(prefers-color-scheme: light)"
