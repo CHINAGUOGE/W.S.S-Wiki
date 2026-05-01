@@ -4,13 +4,16 @@ repo_url: https://github.com/CHINAGUOGE/W.S.S-Wiki
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo1.png
+  favicon: assets/favicon.png
   language: zh
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
       accent: indigo
+      primary: teal
+      accent: range
       toggle:
         icon: material/brightness-7
         name: 切换至深色模式
@@ -33,7 +36,6 @@ theme:
     - content.code.annotate       # 代码注释支持
 
 extra:
-  copyright: 'Copyright &copy; 2026 GES | W.S.S 矩阵.'
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/CHINAGUOGE/W.S.S-Wiki
