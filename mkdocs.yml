@@ -33,10 +33,7 @@ theme:
     - content.code.annotate       # 代码注释支持
 
 extra:
-  copyright: |
-    Copyright &copy; 2026 GES | W.S.S 矩阵.
-    <br>
-    本站由Guoge提供技术支持
+  copyright: Copyright &copy; 2026 GES | W.S.S 矩阵.
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/CHINAGUOGE/W.S.S-Wiki
