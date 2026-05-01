@@ -4,7 +4,7 @@ repo_url: https://github.com/CHINAGUOGE/W.S.S-Wiki
 
 theme:
   name: material
-  logo: /assets/logo1.png
+  logo: assets/logo1.png
   language: zh
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -25,28 +25,64 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.indexes           # 目录索引页支持
+    - navigation.instant           # 页面即时加载
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.code.annotate       # 代码注释支持
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/CHINAGUOGE
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:your-email@example.com
 
 extra_css:
   - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css # 数学公式样式
+
+extra_javascript:
+  - https://unpkg.com/katex@0/dist/katex.min.js     # 数学公式脚本
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 markdown_extensions:
-  - admonition          # 提示块
-  - pymdownx.details    # 可折叠提示块
-  - pymdownx.superfences # 嵌套代码块
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite # 支持内联代码样式
-  - pymdownx.snippets
-  - attr_list           # 用于实现黑幕 [文字]{.heimu}
+  - admonition
+  - attr_list
   - md_in_html
+  - tables
+  - footnotes
+  - def_list
   - toc:
       permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.caret               # 下划线/上标
+  - pymdownx.tilde               # 删除线/下标
+  - pymdownx.mark                # 文本高亮
+  - pymdownx.emoji:              # 表情支持
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:         # 数学公式
+      generic: true
 
 plugins:
   - search
-#  - with-pdf
+  - tags                         # 标签系统
+  - blog:                        # 博客功能
+      blog_dir: blog
+      blog_toc: true
+  - glightbox                    # 图片点击放大
+  - with-pdf
