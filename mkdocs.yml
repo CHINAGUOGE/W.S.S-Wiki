@@ -49,4 +49,4 @@ markdown_extensions:
 
 plugins:
   - search
-  - with-pdf
+#  - with-pdf
