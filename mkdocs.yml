@@ -85,4 +85,4 @@ plugins:
       blog_dir: blog
       blog_toc: true
   - glightbox                    # 图片点击放大
-  - with-pdf
+#  - with-pdf

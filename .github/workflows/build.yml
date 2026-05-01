@@ -29,7 +29,6 @@ jobs:
                       mkdocs-blog-plugin \
                       mkdocs-material[imaging] \
                       cairosvg \
-                      mkdocs-with-pdf
 
       # 第四步：执行部署
       - run: mkdocs gh-deploy --force
