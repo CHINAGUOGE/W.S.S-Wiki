@@ -1,0 +1,53 @@
+/* 基础变量 */
+:root {
+    --heimu-bg: #252525;
+    --heimu-text: #252525;
+    --heimu-reveal: #ffffff;
+}
+
+[data-md-color-scheme="slate"] {
+    --heimu-bg: #eeeeee;
+    --heimu-text: #eeeeee;
+    --heimu-reveal: #000000;
+}
+
+/* 黑幕主体 */
+.heimu {
+    background-color: var(--heimu-bg);
+    color: var(--heimu-text);
+    text-shadow: none;
+    transition: color 0.2s ease;
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+/* 链接处理：默认不可点，颜色与背景一致 */
+.heimu a {
+    color: var(--heimu-text);
+    pointer-events: none;
+    transition: color 0.2s ease;
+}
+
+/* 悬停显现逻辑 */
+.heimu:hover,
+.heimu:active {
+    color: var(--heimu-reveal);
+}
+
+/* 当外层黑幕被悬停时，内层的所有链接恢复可点状态 */
+.heimu:hover a {
+    color: var(--md-typeset-a-color);
+    /* 使用 Material 主题默认链接色 */
+    pointer-events: auto;
+}
+
+/* 嵌套处理：当内层黑幕在外层已显现的背景下时，确保它依然是黑的 */
+.heimu .heimu {
+    background-color: var(--heimu-bg);
+    color: var(--heimu-text);
+}
+
+/* 只有当鼠标直接移动到内层黑幕上时，内层才显现 */
+.heimu .heimu:hover {
+    color: var(--heimu-reveal);
+}
