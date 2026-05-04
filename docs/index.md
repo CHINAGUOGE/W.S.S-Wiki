@@ -16,7 +16,7 @@
 
 <div class="grid cards" markdown>
 
-- :fontawesome-brands-markdown: **关于暖源社 | W.S.S**
+- :fontawesome-solid-circle-info: **关于暖源社 | W.S.S**
 
     如果你想了解什么是暖源社 | W.S.S，我们写了个简单的介绍
 
@@ -37,7 +37,7 @@
 
 ---
 
-### 🤝 友情链接
+### 友情链接
 
  - [**中文多意识体系统百科**](https://wiki.mpsteam.cn/)
  >多意识体系统与相关心理健康主题的中文知识库与开源协作项目。    

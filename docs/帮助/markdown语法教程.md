@@ -214,4 +214,4 @@ _(注：简码支持取决于具体的应用程序)_
 md格式： <br>
 [Markdown 语法指南.md](https://api.51320721.xyz/download/Markdown-md.md) <br>
 PDF格式： <br>
-[Markdown 语法指南.pdf"](https://api.51320721.xyz/download/Markdown-pdf.pdf)
+[Markdown 语法指南.pdf](https://api.51320721.xyz/download/Markdown-pdf.pdf)
