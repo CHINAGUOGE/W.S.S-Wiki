@@ -13,26 +13,6 @@
 * 人格/现实解体（Depersonalization/Derealization, DP/DR）：感觉自己或外界不真实；
 * 吸收沉浸（Absorption）：在想象或活动中深度投入。
 
-!!! tip "使用说明"
-
-&#x20;   - 每一道题用滑块选择 0–100%：表示在日常生活中出现该体验的时间比例。
-    - 建议按直觉作答；尽量不要反复修改，以首次直觉为准。可在最后点击“计算分数”。
-
-!!! info "分数解释（参考 NovoPsych, 2024；仅作筛查）"
-
-&#x20;   0–11 低 · 12–19 轻度 · 20–29 中度 · 30–45 高 · ≥46（可能提示显著解离倾向）。
-
-    注：分界值用于筛查与研究，部分研究采用不同阈值设定（例如 Carlson \& Putnam, 1993；Ross, 2007）。任何分数均需结合主观痛苦与功能受损综合判断，\*\*不直接等同临床诊断\*\*。\[^carlson1993] \[^ross2007]
-
-!!! note "子量表与算法说明（依据通用做法 / NovoPsych 公示资料）"
-
-&#x20;   - 总分：28 题取平均（0–100）
-    - 子量表（各 6 题，均为平均分）：
-        - 记忆缺失（Amnesia）：3、4、5、8、25、26
-        - 人格/现实解体（DP/DR）：7、11、12、13、27、28
-        - 吸收沉浸（Absorption）：2、14、15、17、18、20
-    - 注：分数仅作筛查用途，解释需结合情境、痛苦程度与功能受损。
-
 ## 在线测试
 
 <div class="guoge-scale-wrapper" style="all: initial; display: block; font-family: sans-serif; max-width: 750px; margin: 20px auto; border: 1px solid #e0e0e0; border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">

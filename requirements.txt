@@ -1,0 +1,5 @@
+mkdocs-material
+mkdocs-glightbox
+mkdocs-blog-plugin
+mkdocs-material[imaging]
+cairosvg
