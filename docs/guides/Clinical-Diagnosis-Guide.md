@@ -1,0 +1,598 @@
+---
+comments: true
+tags:
+
+- guide:诊断与临床
+
+title: 诊断与临床导览
+description: 汇总 DID、OSDD、PTSD、人格解体等诊断与临床词条，按鉴别、评估与治疗场景组织核心内容，帮助读者快速定位症状边界与共病线索。
+topic: 诊断与临床
+updated: 2025-10-22
+search:
+  exclude: true
+---
+
+# 诊断与临床导览
+
+> 掌握标准诊断语言，能显著提升与医护沟通效率、辨识共病并规划治疗路径。
+> 本导览按 **DSM-5-TR** 分类组织 `topic: 诊断与临床` 词条，提供从入门到鉴别的快速路径。
+
+!!! info "免责声明"
+    本站内容仅用于教育，不构成诊断或治疗建议。若出现急性风险（如自伤、精神错乱等），请立即联系当地急救系统/精神科急诊。
+
+---
+
+## 🚀 快速导航
+
+<div class="grid cards" markdown>
+
+-   :material-compass-outline: **入门与整体观**
+
+    核心概念与总览
+    [:octicons-arrow-right-16: 进入](#入门与整体观)
+
+-   :material-format-list-bulleted-square: **DSM-5-TR 分类总览**
+
+    22 大类折叠浏览
+    [:octicons-arrow-right-16: 进入](#dsm-5-tr-诊断分类体系)
+
+-   :material-earth: **ICD-11 独有诊断**
+
+    WHO 全球标准与独特分类
+    [:octicons-arrow-right-16: 进入](#icd-11-独有诊断分类体系)
+
+-   :material-clipboard-pulse-outline: **临床评估关键概念**
+
+    意识状态、述情障碍等
+    [:octicons-arrow-right-16: 进入](#其他核心评估概念)
+
+-   :material-clipboard-text-search: **标准化评估工具**
+
+    量表筛查与追踪
+    [:octicons-arrow-right-16: 进入](#标准化评估工具)
+
+-   :material-brain: **神经系统疾病与精神症状（跨学科）**
+
+    癫痫、TBI、脑肿瘤等与精神症状的鉴别与共病管理
+    [:octicons-arrow-right-16: 进入](#神经系统疾病与精神症状跨学科)
+
+-   :material-book-clock-outline: **非正式与历史术语**
+
+    媒体俗称与已淘汰诊断的现代对应
+    [:octicons-arrow-right-16: 进入](#非正式与历史术语)
+
+-   :material-flash: **生物治疗与脑刺激**
+
+    ECT/MECT 与 CES 入口
+    [:octicons-arrow-right-16: 进入](#生物治疗与脑刺激)
+</div>
+
+---
+
+## 入门与整体观
+
+- [心理健康导览](Mental-Health-Guide.md) — :octicons-check-16: 已完成
+
+  整合创伤、解离、情绪障碍的核心概念，作为总体入口。
+
+- [创伤（Trauma）](../心理相关/Trauma.md) — :octicons-check-16: 已完成
+
+  区分 I/II 型创伤与神经生物学影响，为 PTSD/CPTSD 等理解奠基。
+
+- [DID、OSDD、PDID 有什么区别？](../心理相关/DID-OSDD-PDID-Comparison.md) — :octicons-check-16: 已完成
+
+  面向入口搜索的速查页，快速区分 DID、OSDD 与 PDID 的诊断体系、控制权变化与遗忘模式。
+
+- [ASD 是什么意思？孤独症谱系障碍还是急性应激障碍](../心理相关/ASD-Meaning-Autism-or-Acute-Stress-Disorder.md) — :octicons-check-16: 已完成
+
+  处理高频缩写歧义，帮助区分 ASD 作为孤独症谱系障碍、自闭症谱系与急性应激障碍时的不同搜索语境。
+
+<!-- 生物治疗与脑刺激条目已迁移至文末专章 -->
+
+## 其他核心评估概念
+
+- **意识状态与认知**
+
+  [定向障碍（Disorientation）](../心理相关/Disorientation.md) — :octicons-check-16: 已完成
+  聚焦时间、地点、自我定向受损的识别要点，并补充解离诱发时间空窗的辨识与内部交接策略，辅助精神状态检查判断。
+
+- **创伤记忆与评估**
+
+  [深层记忆（Deep Memory）](../心理相关/Deep-Memory.md) — :octicons-check-16: 已完成
+  与核心创伤、情绪图式高度相关的隐性记忆材料，常以碎片化形式储存。探索需在专业指导下进行，详述特征、风险、循证方法与安全前提。高风险临床议题，需谨慎评估与相位化治疗。
+
+- **伴随心理现象**
+
+  [述情障碍（Alexithymia）](../心理相关/Alexithymia.md) — :octicons-check-16: 已完成
+  说明情绪识别与表达困难对症状评估与治疗动机的影响。
+
+  [安慰剂效应（Placebo Effect）](../心理相关/Placebo-Effect.md) — :octicons-check-16: 已完成
+  梳理预期、条件化与奖励学习如何影响症状改善，并区分安慰剂效应、反安慰剂效应与回归均值。
+
+- **标准化评估工具**
+
+  见下方专章，快速定位跨诊断筛查与症状追踪的核心量表。
+
+---
+
+## 标准化评估工具
+
+- [DSM-5-TR 评估量表总览](../心理相关/DSM-5TR-Scales.md) — :octicons-check-16: 已完成
+
+  汇总跨诊断筛查、特异性严重度与功能残障量表，提供初诊筛查与持续随访的量化框架。
+
+- [解离经验量表（DES‑II）](../心理相关/Dissociative-Experiences-Scale-DES-II.md) — :octicons-check-16: 已完成
+
+  在线交互式自评（不存储数据），自动计算总均分并给出可视化参考，适合初步筛查与自我观察。
+
+- [多维解离量表（MID‑60）](../心理相关/Multidimensional-Inventory-of-Dissociation-MID-60.md) — :octicons-check-16: 已完成
+
+  在线交互式自评（不存储数据），提供 12 个解离子量表的详细评估，包括 DID、OSDD-1、DP/DR、解离性失忆、PTSD、转换障碍等维度，适合多维度筛查与症状模式分析。
+
+- [躯体形式解离问卷（SDQ‑20）](../心理相关/Somatoform-Dissociation-Questionnaire-SDQ-20.md) — :octicons-check-16: 已完成
+
+  在线交互式自评（不存储数据），评估躯体解离症状的严重程度，包括感觉异常、运动障碍、知觉变化等，含 SDQ-5 简化版，适合识别身体感知解离症状。
+
+- [患者健康问卷-9（PHQ‑9）](../心理相关/Patient-Health-Questionnaire-9-PHQ-9.md) — :octicons-check-16: 已完成
+
+  在线交互式自评（不存储数据），评估过去两周抑郁症状严重度，可同时查看 PHQ-2 子分与常见筛查阈值，适合初筛与随访追踪。
+
+- [广泛性焦虑量表-7（GAD‑7）](../心理相关/Generalized-Anxiety-Disorder-7-GAD-7.md) — :octicons-check-16: 已完成
+
+  在线交互式自评（不存储数据），评估过去两周担忧、紧张、放松困难与烦躁等焦虑症状，适合焦虑初筛与症状变化观察。
+
+- [症状自评量表修订版（SCL-90-R）](../心理相关/Symptom-Checklist-90-SCL-90.md) — :octicons-check-16: 已完成
+
+  在线交互式自评（不存储数据），采用 0-4 分评分系统，评估躯体化、强迫、人际敏感、抑郁、焦虑、敌对、恐怖、偏执和精神病性等九个症状维度，适合心理症状全面筛查与评估。
+
+- [焦虑自评量表（SAS）](../心理相关/Self-Rating-Anxiety-Scale-SAS.md) — :octicons-check-16: 已完成
+
+  在线交互式自评（不存储数据），20 题自评量表，评估焦虑症状的严重程度，自动计算粗分和标准分（粗分 × 1.25），适合焦虑症状的初步筛查与治疗监测。
+
+- [抑郁自评量表（SDS）](../心理相关/Self-Rating-Depression-Scale-SDS.md) — :octicons-check-16: 已完成
+
+  在线交互式自评（不存储数据），20 题自评量表，评估抑郁症状的严重程度，自动计算粗分和标准分（粗分 × 1.25），适合抑郁症状的初步筛查与治疗效果评估。
+
+- [解离量表怎么选？DES‑II、MID‑60、SDQ‑20 对照](../心理相关/Dissociation-Scales-How-To-Choose.md) — :octicons-check-16: 已完成
+
+  用适用场景、测量重点与局限性快速对照三种常见解离量表，适合“先做哪一个”的入口需求。
+
+---
+
+## DSM-5-TR 诊断分类体系
+
+> 提示：点击展开各类，先读 **总览/概念**，再看 **核心诊断**，最后根据情况查 **说明符/鉴别**。
+
+### 1) 神经发育障碍
+
+???+ abstract "展开查看"
+
+    - [智力发育障碍（Intellectual Developmental Disorders）](../心理相关/Intellectual-Developmental-Disorders.md) — :octicons-check-16: 已完成
+    - [沟通障碍（Communication Disorders）](../心理相关/Communication-Disorders.md) — :octicons-check-16: 已完成
+    - [孤独症谱系障碍（ASD）](../心理相关/Autism-Spectrum-Disorder.md) — :octicons-check-16: 已完成
+    - [注意缺陷多动障碍（ADHD）](../心理相关/Attention-Deficit-Hyperactivity-Disorder-ADHD.md) — :octicons-check-16: 已完成
+    - [特定学习障碍（Specific Learning Disorder）](../心理相关/Specific-Learning-Disorder.md) — :octicons-check-16: 已完成
+    - [运动障碍（Motor Disorders）](../心理相关/Motor-Disorders.md) — :octicons-check-16: 已完成
+    - [发育协调障碍（Developmental Coordination Disorder）](../心理相关/Developmental-Coordination-Disorder.md) — :octicons-check-16: 已完成
+    - [刻板运动障碍（Stereotypic Movement Disorder）](../心理相关/Stereotypic-Movement-Disorder.md) — :octicons-check-16: 已完成
+    - [抽动障碍（Tic Disorders）](../心理相关/Tic-Disorders.md) — :octicons-check-16: 已完成
+
+### 2) 精神分裂症谱系及其他精神病性障碍
+
+???+ abstract "展开查看"
+
+    - [精神分裂症（Schizophrenia, SZ/SCZ）](../心理相关/Schizophrenia-SZ.md) — :octicons-check-16: 已完成
+    - [妄想障碍（Delusional Disorder）](../心理相关/Delusional-Disorder.md) — :octicons-check-16: 已完成
+    - [短期精神病性障碍（Brief Psychotic Disorder）](../心理相关/Brief-Psychotic-Disorder.md) — :octicons-check-16: 已完成
+    - [分裂样障碍（Schizophreniform Disorder）](../心理相关/Schizophreniform-Disorder.md) — :octicons-check-16: 已完成
+    - [分裂情感性障碍（Schizoaffective Disorder）](../心理相关/Schizoaffective-Disorder.md) — :octicons-check-16: 已完成
+    - [物质/药物所致精神病性障碍（Substance/Medication-Induced Psychotic Disorder）](../心理相关/Substance-Medication-Induced-Psychotic-Disorder.md) — :octicons-check-16: 已完成
+    - [躯体疾病所致精神病性障碍（Psychotic Disorder Due to Another Medical Condition）](../心理相关/Psychotic-Disorder-Due-to-Another-Medical-Condition.md) — :octicons-check-16: 已完成
+    - [紧张症（Catatonia）](../心理相关/Catatonia.md) — :octicons-check-16: 已完成
+    - [其他特定的或未特定的精神病性障碍（Other Specified/Unspecified Psychotic Disorder）](../心理相关/Other-Specified-or-Unspecified-Psychotic-Disorder.md) — :octicons-check-16: 已完成
+
+### 3) 双相及相关障碍
+
+???+ abstract "展开查看"
+
+    - [双相障碍总览（Bipolar Disorders）](../心理相关/Bipolar-Disorders.md) — :octicons-check-16: 已完成
+    - [双相 I 型障碍（Bipolar I Disorder）](../心理相关/Bipolar-I-Disorder.md) — :octicons-check-16: 已完成
+    - [双相 II 型障碍（Bipolar II Disorder）](../心理相关/Bipolar-II-Disorder.md) — :octicons-check-16: 已完成
+    - [躁狂发作（Mania）](../心理相关/Mania.md) / [轻躁狂发作（Hypomania）](../心理相关/Hypomania.md) — :octicons-check-16: 已完成
+    - [环性心境障碍（Cyclothymic Disorder）](../心理相关/Cyclothymic-Disorder.md) — :octicons-check-16: 已完成
+    - [物质/药物所致双相及相关障碍](../心理相关/Substance-Medication-Induced-Bipolar-Related-Disorder.md) — :octicons-check-16: 已完成
+    - [躯体疾病所致双相及相关障碍](../心理相关/Bipolar-Related-Disorder-Due-to-Another-Medical-Condition.md) — :octicons-check-16: 已完成
+    - [其他特定的或未特定的双相及相关障碍](../心理相关/Other-Specified-or-Unspecified-Bipolar-Related-Disorder.md) — :octicons-check-16: 已完成
+
+### 4) 抑郁障碍
+
+???+ abstract "展开查看"
+
+    - [抑郁障碍总览（Depressive Disorders）](../心理相关/Depressive-Disorders.md) — :octicons-check-16: 已完成
+    - [重性抑郁障碍（MDD）](../心理相关/Major-Depressive-Disorder-MDD.md) — :octicons-check-16: 已完成
+    - [重度抑郁发作（MDE）](../心理相关/Major-Depressive-Episode-MDE.md) — :octicons-check-16: 已完成
+    - [持续性抑郁障碍（PDD）](../心理相关/Persistent-Depressive-Disorder-PDD.md) — :octicons-check-16: 已完成
+    - [经前焦虑障碍（PMDD）](../心理相关/Premenstrual-Dysphoric-Disorder.md) — :octicons-check-16: 已完成
+    - [破坏性心境失调障碍（DMDD）](../心理相关/Disruptive-Mood-Dysregulation-Disorder.md) — :octicons-check-16: 已完成
+    - [物质/药物所致抑郁障碍](../心理相关/Substance-Medication-Induced-Depressive-Disorder.md) — :octicons-check-16: 已完成
+    - [躯体疾病所致抑郁障碍](../心理相关/Depressive-Disorder-Due-to-Another-Medical-Condition.md) — :octicons-check-16: 已完成
+    - [其他特定的或未特定的抑郁障碍](../心理相关/Other-Specified-or-Unspecified-Depressive-Disorder.md) — :octicons-check-16: 已完成
+
+### 5) 焦虑障碍
+
+???+ abstract "展开查看"
+
+    - [焦虑总览（Anxiety）](../心理相关/Anxiety-Disorders.md) — :octicons-check-16: 已完成
+    - [分离焦虑障碍（Separation Anxiety Disorder, SAD）](../心理相关/Separation-Anxiety-Disorder.md) — :octicons-check-16: 已完成
+    - [选择性缄默症（Selective Mutism）](../心理相关/Selective-Mutism.md) — :octicons-check-16: 已完成
+    - [特定恐惧症（Specific Phobia）](../心理相关/Specific-Phobia.md) — :octicons-check-16: 已完成
+    - [社交焦虑障碍（Social Anxiety Disorder, SAD）](../心理相关/Social-Anxiety-Disorder.md) — :octicons-check-16: 已完成
+    - [惊恐障碍（Panic Disorder）](../心理相关/Panic-Disorder.md) / [惊恐发作（Panic Attack）](../心理相关/Panic-Attack.md) — :octicons-check-16: 已完成
+    - [广场恐惧症（Agoraphobia）](../心理相关/Agoraphobia.md) — :octicons-check-16: 已完成
+    - [广泛性焦虑障碍（GAD）](../心理相关/Generalized-Anxiety-Disorder-GAD.md) — :octicons-check-16: 已完成
+    - [情境性焦虑（Situational Anxiety）](../心理相关/Situational-Anxiety.md) — :octicons-check-16: 已完成
+    - [其他特定/未特定的焦虑障碍（Other Specified or Unspecified Anxiety Disorder）](../心理相关/Other-Specified-or-Unspecified-Anxiety-Disorder.md) — :octicons-check-16: 已完成
+    - [物质/药物诱发焦虑障碍（Substance/Medication-Induced Anxiety Disorder）](../心理相关/Substance-Medication-Induced-Anxiety-Disorder.md) — :octicons-check-16: 已完成
+    - [其他医疗状况所致焦虑障碍（Anxiety Disorder Due to Another Medical Condition）](../心理相关/Anxiety-Disorder-Due-to-Another-Medical-Condition.md) — :octicons-check-16: 已完成
+
+### 6) 强迫及相关障碍
+
+???+ abstract "展开查看"
+
+    - [强迫症（OCD）](../心理相关/OCD.md) — :octicons-check-16: 已完成
+    - [躯体变形障碍（BDD）](../心理相关/Body-Dysmorphic-Disorder.md) — :octicons-check-16: 已完成
+    - [囤积障碍（Hoarding Disorder）](../心理相关/Hoarding-Disorder.md) — :octicons-check-16: 已完成
+    - [拔毛障碍（Trichotillomania，Hair-Pulling Disorder）](../心理相关/Trichotillomania-Hair-Pulling-Disorder.md) — :octicons-check-16: 已完成
+    - [抓痕障碍（Excoriation，Skin-Picking Disorder）](../心理相关/Excoriation-Skin-Picking-Disorder.md) — :octicons-check-16: 已完成
+
+### 7) 创伤及应激相关障碍
+
+???+ abstract "展开查看"
+
+    - [创伤后应激障碍（PTSD）](../心理相关/PTSD.md) — :octicons-check-16: 已完成
+    - [复杂创伤后应激障碍（CPTSD）](../心理相关/CPTSD.md) — :octicons-check-16: 已完成
+    - [闪回（Flashback）](../心理相关/Flashback.md) — :octicons-check-16: 已完成
+    - [急性应激障碍（ASD）](../心理相关/Acute-Stress-Disorder-ASD.md) — :octicons-check-16: 已完成
+    - [适应障碍（Adjustment Disorders）](../心理相关/Adjustment-Disorders.md) — :octicons-check-16: 已完成
+    - [长期哀伤障碍（Prolonged Grief Disorder）](../心理相关/Prolonged-Grief-Disorder.md) — :octicons-check-16: 已完成
+    - [反应性依恋障碍（RAD）](../心理相关/Reactive-Attachment-Disorder.md) — :octicons-check-16: 已完成
+    - [去抑制性社交参与障碍（DSED）](../心理相关/Disinhibited-Social-Engagement-Disorder.md) — :octicons-check-16: 已完成
+    - [其他特定或未特定创伤及应激相关障碍](../心理相关/Other-Specified-or-Unspecified-Trauma-Stressor-Disorders.md) — :octicons-check-16: 已完成
+
+### 8) 解离障碍
+
+???+ abstract "展开查看"
+
+    - [解离障碍总览（Dissociative Disorders）](../心理相关/Dissociative-Disorders.md) — :octicons-check-16: 已完成
+    - [解离性身份障碍（DID）](../心理相关/DID.md) — :octicons-check-16: 已完成
+
+        * 面向“DID 是什么病”“DID 和多重人格/OSDD/PDID 的区别”等入口需求，提供诊断、筛查与鉴别路径。*
+    - [解离性遗忘（DA）](../心理相关/Dissociative-Amnesia-DA.md) — :octicons-check-16: 已完成
+    - [人格解体/现实解体障碍（DPDR）](../心理相关/Depersonalization-Derealization-Disorder-DPDR.md) — :octicons-check-16: 已完成
+    - [其他特定解离障碍（OSDD）](../心理相关/OSDD.md) / [未特定解离障碍（UDD）](../心理相关/Unspecified-Dissociative-Disorder-UDD.md) — :octicons-check-16: 已完成
+    - [部分解离性身份障碍（PDID，ICD-11）](../心理相关/Partial-Dissociative-Identity-Disorder-PDID.md) — :octicons-check-16: 已完成
+
+        * （说明：ICD-11 独立诊断，**非 DSM-5-TR**；详细对照见下文 ICD-11 专章）*
+
+### 9) 躯体症状及相关障碍
+
+???+ abstract "展开查看"
+
+    - [躯体症状障碍（SSD）](../心理相关/Somatic-Symptom-Disorder-SSD.md) — :octicons-check-16: 已完成
+    - [功能性神经症状障碍/转换障碍（FND）](../心理相关/Conversion-Disorder-FND.md) — :octicons-check-16: 已完成
+    - [慢性疼痛（Chronic Pain）](../心理相关/Chronic-Pain.md) — :octicons-check-16: 已完成
+    - [疾病焦虑障碍（IAD）](../心理相关/Illness-Anxiety-Disorder.md) — :octicons-check-16: 已完成
+    - [影响其他躯体疾病的心理因素（PFAOMC）](../心理相关/Psychological-Factors-Affecting-Other-Medical-Conditions.md) — :octicons-check-16: 已完成
+    - [做作性障碍（Factitious Disorder）](../心理相关/Factitious-Disorder.md) — :octicons-check-16: 已完成
+    - [其他特定或未特定的躯体症状及相关障碍](../心理相关/Other-Specified-or-Unspecified-Somatic-Symptom-Related-Disorders.md) — :octicons-check-16: 已完成
+
+### 10) 喂养与进食障碍
+
+???+ abstract "展开查看"
+
+    - [进食障碍总览（ED）](../心理相关/Eating-Disorders-ED.md) — :octicons-check-16: 已完成
+    - [神经性厌食症（Anorexia Nervosa, AN）](../心理相关/Anorexia-Nervosa.md) — :octicons-check-16: 已完成
+    - [神经性贪食症（Bulimia Nervosa, BN）](../心理相关/Bulimia-Nervosa.md) — :octicons-check-16: 已完成
+    - [暴食障碍（Binge-Eating Disorder, BED）](../心理相关/Binge-Eating-Disorder.md) — :octicons-check-16: 已完成
+    - [情绪化进食（Emotional Eating）](../心理相关/Emotional-Eating.md) — :octicons-check-16: 已完成
+    - 回避/限制性食物摄入障碍（ARFID）等 — :octicons-clock-16: 待更新
+
+### 11) 排泄障碍
+
+???+ abstract "展开查看"
+
+    - 遗尿症（Enuresis）、遗粪症（Encopresis）等 — :octicons-clock-16: 待更新
+
+### 12) 睡眠-觉醒障碍
+
+???+ abstract "展开查看"
+
+    - [睡眠障碍总览（SD）](../心理相关/Sleep-Disorders-SD.md) — :octicons-check-16: 已完成
+    - [失眠障碍（Insomnia Disorder）](../心理相关/Insomnia-Disorder.md) — :octicons-check-16: 已完成
+    - [嗜睡障碍（Hypersomnolence Disorder）](../心理相关/Hypersomnolence-Disorder.md) — :octicons-check-16: 已完成
+    - [睡眠相关呼吸障碍（Breathing-Related Sleep Disorders）](../心理相关/Breathing-Related-Sleep-Disorders.md) — :octicons-check-16: 已完成
+        - [阻塞性睡眠呼吸暂停低通气（Obstructive Sleep Apnea Hypopnea，OSAH）](../心理相关/Obstructive-Sleep-Apnea-Hypopnea.md) — :octicons-check-16: 已完成
+    - [不宁腿综合征（Restless Legs Syndrome，RLS）](../心理相关/Restless-Legs-Syndrome.md) — :octicons-check-16: 已完成
+    - [昼夜节律睡眠-觉醒障碍（Circadian Rhythm Sleep-Wake Disorders）](../心理相关/Circadian-Rhythm-Sleep-Wake-Disorders.md) — :octicons-check-16: 已完成
+    - [发作性睡病（Narcolepsy）](../心理相关/Narcolepsy.md) — :octicons-check-16: 已完成
+    - 异态睡眠（Parasomnias）等 — :octicons-clock-16: 待更新
+
+### 13) 性功能障碍
+
+???+ abstract "展开查看"
+
+    - 各子类 — :octicons-clock-16: 待更新
+
+### 14) 性别不安
+
+???+ abstract "展开查看"
+
+    - [性别不安（GD）](../心理相关/Gender-Dysphoria-GD.md) — :octicons-check-16: 已完成
+    - [其他特定/未特定性别不安](../心理相关/Other-Specified-Unspecified-Gender-Dysphoria.md) — :octicons-check-16: 已完成
+    - 说明符（儿童/青少年与成人）— :octicons-check-16: 已完成
+
+### 15) 破坏性、冲动控制及品行障碍
+
+???+ abstract "展开查看"
+
+    - [对立违抗障碍（ODD）](../心理相关/Oppositional-Defiant-Disorder.md) — :octicons-check-16: 已完成
+    - [间歇性暴怒障碍（IED）](../心理相关/Intermittent-Explosive-Disorder.md) — :octicons-check-16: 已完成
+    - [品行障碍（Conduct Disorder）](../心理相关/Conduct-Disorder.md) — :octicons-check-16: 已完成
+    - [纵火癖（Pyromania）](../心理相关/Pyromania.md) — :octicons-check-16: 已完成
+    - [偷窃癖（Kleptomania）](../心理相关/Kleptomania.md) — :octicons-check-16: 已完成
+
+### 16) 物质相关及成瘾障碍
+
+???+ abstract "展开查看"
+
+    - [物质使用障碍总览（SUD）](../心理相关/Substance-Use-Disorders-SUD.md) — :octicons-check-16: 已完成
+    - [酒精相关障碍（Alcohol-Related Disorders）](../心理相关/Alcohol-Related-Disorders.md) — :octicons-check-16: 已完成
+    - [大麻相关障碍（Cannabis-Related Disorders）](../心理相关/Cannabis-Related-Disorders.md) — :octicons-check-16: 已完成
+    - [阿片类相关障碍（Opioid-Related Disorders）](../心理相关/Opioid-Related-Disorders.md) — :octicons-check-16: 已完成
+    - [镇静催眠抗焦虑药相关障碍（Sedative-Hypnotic-Anxiolytic-Related Disorders）](../心理相关/Sedative-Hypnotic-Anxiolytic-Related-Disorders.md) — :octicons-check-16: 已完成
+    - [兴奋剂相关障碍（Stimulant-Related Disorders）](../心理相关/Stimulant-Related-Disorders.md) — :octicons-check-16: 已完成
+    - [烟草相关障碍（Tobacco-Related Disorders）](../心理相关/Tobacco-Related-Disorders.md) — :octicons-check-16: 已完成
+    - [咖啡因相关障碍（Caffeine-Related Disorders）](../心理相关/Caffeine-Related-Disorders.md) — :octicons-check-16: 已完成
+    - [赌博障碍（Gambling Disorder）](../心理相关/Gambling-Disorder.md) — :octicons-check-16: 已完成
+    - [游戏障碍（Gaming Disorder）](../心理相关/Gaming-Disorder.md) — :octicons-check-16: 已完成
+
+### 17) 神经认知障碍
+
+???+ abstract "展开查看"
+
+    - [谵妄（Delirium）](../心理相关/Delirium.md) — :octicons-check-16: 已完成
+    - [重度与轻度神经认知障碍（Major and Mild Neurocognitive Disorders）](../心理相关/Major-Mild-Neurocognitive-Disorders.md) — :octicons-check-16: 已完成
+        - [阿尔茨海默病性神经认知障碍（NCD due to Alzheimer's Disease）](../心理相关/NCD-Due-to-Alzheimers-Disease.md) — :octicons-check-16: 已完成
+        - [血管性神经认知障碍（Vascular NCD）](../心理相关/Vascular-NCD.md) — :octicons-check-16: 已完成
+        - [路易体神经认知障碍（NCD due to Lewy Bodies）](../心理相关/NCD-Due-to-Lewy-Bodies.md) — :octicons-check-16: 已完成
+        - [额颞叶变性性神经认知障碍（NCD due to Frontotemporal Degeneration）](../心理相关/NCD-Due-to-Frontotemporal-Degeneration.md) — :octicons-check-16: 已完成
+        - [帕金森病性神经认知障碍（NCD due to Parkinson's Disease）](../心理相关/NCD-Due-to-Parkinsons-Disease.md) — :octicons-check-16: 已完成
+        - [创伤性脑损伤性神经认知障碍（NCD due to TBI）](../心理相关/NCD-Due-to-TBI.md) — :octicons-check-16: 已完成
+        - [亨廷顿病性神经认知障碍（NCD due to Huntington's Disease）](../心理相关/NCD-Due-to-Huntingtons-Disease.md) — :octicons-check-16: 已完成
+    - **与神经系统疾病的鉴别**：见[神经系统疾病与精神症状（跨学科）](#神经系统疾病与精神症状跨学科)，包括癫痫相关精神症状与用药影响。
+
+### 18) 人格障碍
+
+???+ abstract "展开查看"
+
+    - [人格障碍总览（Personality Disorders）](../心理相关/Personality-Disorders.md) — :octicons-check-16: 已完成
+    - A 组（奇异/怪异）：[偏执型（PPD）](../心理相关/Paranoid-Personality-Disorder-PPD.md)、[分裂样型（SzPD）](../心理相关/Schizoid-Personality-Disorder-SzPD.md)、[分裂型（STPD）](../心理相关/Schizotypal-Personality-Disorder-STPD.md) — :octicons-check-16: 已完成
+    - B 组（戏剧化/冲动）：[反社会型（ASPD）](../心理相关/Antisocial-Personality-Disorder-ASPD.md)、[边缘型（BPD）](../心理相关/Borderline-Personality-Disorder-BPD.md)、[表演型（HPD）](../心理相关/Histrionic-Personality-Disorder-HPD.md)、[自恋型（NPD）](../心理相关/Narcissistic-Personality-Disorder-NPD.md) — :octicons-check-16: 已完成
+
+        * NPD 词条补充“普通自恋特质 vs 人格障碍”的边界，避免将网络标签误当诊断。*
+    - C 组（焦虑/恐惧）：[回避型（AvPD）](../心理相关/Avoidant-Personality-Disorder-AvPD.md)、[依赖型（DPD）](../心理相关/Dependent-Personality-Disorder-DPD.md)、[强迫型（OCPD）](../心理相关/Obsessive-Compulsive-Personality-Disorder-OCPD.md) — :octicons-check-16: 已完成
+    - [其他特定/未特定人格障碍](../心理相关/Other-Specified-or-Unspecified-Personality-Disorder.md) — :octicons-check-16: 已完成
+
+### 19) 性偏好障碍
+
+???+ abstract "展开查看"
+
+    - 各子类 — :octicons-clock-16: 待更新
+
+### 20) 其他精神障碍及附加编码
+
+???+ abstract "展开查看"
+
+    - 其他特定精神障碍（Other Specified Mental Disorder）— :octicons-clock-16: 待更新
+    - 未特定精神障碍（Unspecified Mental Disorder）— :octicons-clock-16: 待更新
+
+### 21) 药物诱发运动障碍及其他药物不良反应
+
+???+ abstract "展开查看"
+
+    - [抗精神病药物所致帕金森综合征（Antipsychotic-Induced Parkinsonism）](../心理相关/Antipsychotic-Induced-Parkinsonism.md) — :octicons-check-16: 已完成
+    - [其他药物所致帕金森综合征（Other Medication-Induced Parkinsonism）](../心理相关/Other-Medication-Induced-Parkinsonism.md) — :octicons-check-16: 已完成
+    - 迟发性运动障碍（Tardive Dyskinesia）、迟发性静坐不能（Tardive Akathisia）等 — :octicons-clock-16: 待更新
+    - 抗抑郁药中断综合征（Antidepressant Discontinuation Syndrome）— :octicons-clock-16: 待更新
+    - 神经阻滞剂恶性综合征（Neuroleptic Malignant Syndrome）、急性静坐不能（Acute Akathisia）等 — :octicons-clock-16: 待更新
+
+### 22) 可能成为临床关注焦点的其他情况
+
+???+ abstract "展开查看"
+
+    - 关系问题（Relational Problems）— :octicons-clock-16: 待更新
+    - 虐待与忽视问题（Abuse and Neglect）— :octicons-clock-16: 待更新
+    - 教育与职业问题（Educational and Occupational Problems）— :octicons-clock-16: 待更新
+    - 住房与经济问题（Housing and Economic Problems）— :octicons-clock-16: 待更新
+    - 其他健康服务相关问题（Other Problems Related to the Social Environment, Legal System, etc.）— :octicons-clock-16: 待更新
+
+---
+
+## ICD-11 独有诊断分类体系
+
+> **WHO ICD-11** 于 2022 年正式生效,作为全球卫生报告的基础标准。相比 DSM-5-TR,ICD-11 在部分领域提供了更精细的分类,特别是复杂创伤、解离、人格障碍等方面。
+
+### ICD-11 核心创新
+
+<div class="grid cards" markdown>
+
+-   :material-brain: **分离 PTSD 与 CPTSD**
+
+    将复杂创伤从 PTSD 中独立出来,增加"自我组织障碍"维度
+
+-   :material-account-multiple: **新增 PDID**
+
+    部分解离性身份障碍作为独立诊断,填补 OSDD 的模糊地带
+
+-   :material-scale-balance: **维度评估法**
+
+    人格障碍采用维度模型,而非分类标签
+
+-   :material-earth: **跨文化适用性**
+
+    为每个障碍提供文化相关指导
+
+</div>
+
+### ICD-11 独有诊断
+
+???+ abstract "ICD-11 新增/细化的核心诊断"
+
+    **心境障碍整体框架**
+
+    - [心境障碍总览（Affective/Mood Disorders）](../心理相关/Affective-Disorders.md) — :octicons-check-16: 已完成
+
+      ICD-11 保留"心境障碍"作为统一章节（6A6-6A7），涵盖躁狂、双相、抑郁等谱系。而 DSM-5-TR 将其拆分为"双相及相关障碍"(第3章)与"抑郁障碍"(第4章)两个独立分类。此词条详细对比两套体系的结构差异。
+
+    **创伤与应激相关**
+
+    - [复杂创伤后应激障碍（CPTSD, 6B41）](../心理相关/CPTSD.md) — :octicons-check-16: 已完成
+
+      在 PTSD 三大核心症状基础上,增加 **自我组织障碍（DSO）** 三维度:情绪调节困难、负性自我概念、关系障碍。DSM-5 将这些症状整合到 PTSD 扩展标准中,而 ICD-11 将其视为独立的严重创伤反应。
+
+    - [长期哀伤障碍（Prolonged Grief Disorder, 6B42）](../心理相关/Prolonged-Grief-Disorder.md) — :octicons-check-16: 已完成
+
+      DSM-5-TR 已纳入,但 ICD-11 更早确立此诊断,强调持续 6 个月以上（儿童）或 12 个月以上（成人）的强烈哀伤反应。
+
+    **解离障碍细化**
+
+    - [部分解离性身份障碍（PDID, 6B65）](../心理相关/Partial-Dissociative-Identity-Disorder-PDID.md) — :octicons-check-16: 已完成
+
+      替代 DSM-5 的 OSDD-1,明确诊断标准:存在两个或更多人格状态,但 **不完全满足 DID 的完整标准**（如缺乏明显的失忆或状态切换不完整）。这一分类减少了诊断模糊性。
+
+    **成瘾与冲动控制**
+
+    - [游戏障碍（Gaming Disorder, 6C51）](../心理相关/Gaming-Disorder.md) — :octicons-check-16: 已完成
+
+      ICD-11 首次将游戏成瘾纳入"成瘾行为障碍",DSM-5-TR 仍将其相关概念置于"需进一步研究的状况"。
+
+    - **强迫性性行为障碍（Compulsive Sexual Behavior Disorder, 6C72）** — :octicons-clock-16: 待更新
+
+      归类为"冲动控制障碍",区别于性欲倒错;DSM-5 未单独诊断。
+
+    **躯体与自我感知**
+
+    - **身体完整性烦躁（Body Integrity Dysphoria, 6C21）** — :octicons-clock-16: 待更新
+
+      描述渴望截肢或身体改变的强烈体验,ICD-11 新增;DSM-5 未涵盖。
+
+    - **嗅觉参考障碍（Olfactory Reference Disorder, 6B22）** — :octicons-clock-16: 待更新
+
+      对自身体味的病理性关注,ICD-11 单独分类;DSM-5 归入 OCRD 或躯体症状障碍。
+
+    **进食障碍**
+
+    - **回避/限制性食物摄入障碍（ARFID, 6B83）** — :octicons-clock-16: 待更新
+
+      DSM-5 与 ICD-11 均包含,但 ICD-11 在儿童群体中更强调文化敏感性评估。
+
+### DSM-5 vs ICD-11 核心差异
+
+| 维度 | DSM-5-TR | ICD-11 |
+|------|----------|--------|
+| **心境障碍结构** | 拆分为"双相及相关障碍"(第3章)与"抑郁障碍"(第4章) | 统一"心境障碍"章节（6A6-6A7），包含躁狂、双相、抑郁 |
+| **PTSD/CPTSD** | CPTSD 症状整合到 PTSD 扩展标准中 | CPTSD 独立诊断,增加"自我组织障碍"维度 |
+| **解离分类** | OSDD-1（"其他特定解离障碍"）作为兜底类别 | PDID（部分解离性身份障碍）作为明确诊断 |
+| **人格障碍** | 十种分类型号（A/B/C 组） | 维度评估模型（人格功能 + 特质域） |
+| **游戏成瘾** | 仅作为"需进一步研究"附录 | 正式诊断（6C51） |
+| **症状组合** | PTSD 允许 636,120 种症状组合 | PTSD 更窄,CPTSD 更具体,减少诊断异质性 |
+| **文化指导** | 部分障碍提供文化相关说明 | 每个障碍均配有系统性文化指导 |
+
+### ICD-11 使用场景
+
+- **国际医疗记录**:多数国家/地区卫生系统采用 ICD-11 编码报销
+- **研究对比**:阅读国际文献时,需对照 ICD-11 标准
+- **复杂创伤评估**:CPTSD 提供比 DSM-5 PTSD 更精细的创伤反应分层
+- **解离诊断**:PDID 比 OSDD-1 更具临床可操作性
+
+!!! tip "双体系学习建议"
+
+    - **临床实践**:美国/加拿大优先使用 DSM-5-TR,其他地区多用 ICD-11
+    - **文献阅读**:注意研究采用的分类系统,避免混淆诊断标准
+    - **自我理解**:若症状符合 ICD-11 CPTSD 或 PDID,可主动向医疗提供者说明
+    - **保险报销**:确认保险公司接受的编码系统（ICD vs DSM）
+
+---
+
+## 神经系统疾病与精神症状（跨学科）
+
+> 本区收录 **神经科原发疾病** 与 **精神症状/障碍** 的交叉主题，便于临床鉴别与共病管理。
+> 这些主题 **不是 DSM-5-TR 的独立精神诊断**，但在问诊、转诊与随访中非常关键。
+
+- [癫痫（Epilepsy）](../心理相关/Epilepsy.md) — :octicons-check-16: 已完成
+- 颅脑外伤（TBI）— :octicons-clock-16: 待更新
+- 脑肿瘤与占位性病变 — :octicons-clock-16: 待更新
+- 中枢神经感染/炎症性疾病（如自身免疫性脑炎）— :octicons-clock-16: 待更新
+- 代谢/内分泌导致的精神症状（甲状腺功能异常、维生素 B12 缺乏等）— :octicons-clock-16: 待更新
+
+!!! tip "使用建议"
+
+    - 出现 **急性起病的认知/行为改变** 或 **明显的时相性波动**，优先排除器质性/药物相关病因。
+    - 精神科用药与抗癫痫药存在 **相互作用** 风险，处方前核对代谢途径并与神经科沟通。
+
+---
+
+## 学习建议
+
+1. **术语表**：将本页分区 + [心理健康导览](Mental-Health-Guide.md) 的关键词，整理为个人词汇表。
+2. **双体系对照**：每读一条 DSM-5-TR 诊断，都对照 **ICD-11** 差异（适用人群、阈值、说明符）。
+3. **共病优先级**：情绪 × 解离 × 人格 × 躯体的交互最常见，先处理急性风险与功能受损最大的维度。
+4. **问诊准备**：用量表/日志记录 **症状 + 频率 + 起止 + 触发情境**，就医时更高效。
+
+---
+
+## 非正式与历史术语
+
+> 用于解读旧病历/媒体俗称，并提供现代诊断对照；避免误用与污名。
+
+**非正式术语**
+
+- [人格分裂（Split Personality）](../心理相关/Split-Personality.md) — :octicons-check-16: 已完成
+
+**历史诊断（已过时）**
+
+- [多人格障碍（MPD, Multiple Personality Disorder）](../心理相关/Multiple-Personality-Disorder-Obsolete.md) — :octicons-check-16: 已完成
+
+- [癔症（Hysteria）](../心理相关/Hysteria.md) — :octicons-check-16: 已完成
+
+- [分离转换障碍（Dissociative and Conversion Disorder）](../心理相关/Dissociative-Conversion-Disorder-Obsolete.md) — :octicons-check-16: 已完成
+
+- [易性症（Transsexualism）](../心理相关/Transsexualism-Obsolete.md) — :octicons-check-16: 已完成
+
+- [异装癖（Transvestism）](../心理相关/Transvestism-Obsolete.md) — :octicons-check-16: 已完成
+
+!!! tip "使用建议"
+
+    - **旧病历**：先看历史标准，再对照现代分类。
+    - **检索**：注意发表年代与 DSM 版本（I/II/III/III-R/IV/5/5-TR）。
+    - **教育**：向公众优先使用 **精确术语**（如 DID）。
+    - **去污名**：解释俗称与现代诊断的区别。
+
+---
+
+## 生物治疗与脑刺激
+
+> 收录现代脑刺激与生物治疗的核心入门词条，便于与药物/心理治疗形成互补的治疗版图。
+
+- [电休克治疗／改良电痉挛治疗（ECT/MECT）](../心理相关/Modified-Electroconvulsive-Therapy-MECT.md) — :octicons-check-16: 已完成
+
+  难治性抑郁、紧张症等急重症场景的快速生物治疗；现代方案在麻醉与肌松下实施，需进行个体化风险—获益评估与共同决策。
+
+- [经颅微电流刺激（Cranial Electrotherapy Stimulation，CES）](../心理相关/Cranial-Electrotherapy-Stimulation-CES.md) — :octicons-check-16: 已完成
+
+  非侵入、可居家使用的微电流脑刺激；对焦虑的证据相对更好，抑郁与失眠结果不一。适合作为单用（轻-中度）或增效（与 CBT/药物合用）方案，需量表化随访与参数个体化。
+
+---
+
+!!! tip "版权说明"
+    本内容来源于Multiple Personality System Wiki - 多意识体系统百科，MPS Team版权所有。

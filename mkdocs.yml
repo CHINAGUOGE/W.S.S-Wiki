@@ -1,93 +1,221 @@
 site_name: W.S.S-Wiki
 site_url: https://wiki.51320721.xyz
 repo_url: https://github.com/CHINAGUOGE/W.S.S-Wiki
+repo_name: CHINAGUOGE/W.S.S-Wiki
+copyright: Copyright &copy; 2024-2026 W.S.S-Wiki
+
 
 theme:
   name: material
+  language: zh
   custom_dir: overrides
   logo: assets/logo1.png
   favicon: assets/favicon.png
-  language: zh
+
+  # 颜色配置
   palette:
+    # 跟随系统
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: 切换到浅色模式
+
+    # 浅色模式
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      accent: indigo
       primary: teal
-      accent: range
+      accent: indigo
       toggle:
         icon: material/brightness-7
-        name: 切换至深色模式
+        name: 切换到深色模式
+
+    # 深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: 切换至浅色模式
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - navigation.indexes           # 目录索引页支持
-    - navigation.instant           # 页面即时加载
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-    - content.code.annotate       # 代码注释支持
+        name: 切换到跟随系统
 
+  # 字体配置
+  font: false
+
+  # 图标
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/book-open-variant
+    edit: material/pencil
+    view: material/eye
+
+  # 功能特性
+  features:
+    - navigation.tracking         # 地址栏跟踪
+    - navigation.tabs             # 顶部标签页
+    - navigation.tabs.sticky      # 固定标签页
+    - navigation.sections         # 导航分组
+    - navigation.prune
+    - navigation.path             # 面包屑导航
+    - navigation.indexes          # 目录索引页支持
+    - navigation.top              # 返回顶部按钮
+    - navigation.footer           # 页脚导航
+    - navigation.instant          # 页面即时加载
+    - toc.follow                  # 目录跟随
+    - search.suggest              # 搜索建议
+    - search.highlight            # 搜索高亮
+    - search.share                # 搜索分享
+    - content.code.copy           # 代码复制按钮
+    - content.code.select         # 代码选择
+    - content.code.annotate       # 代码注释支持
+    - content.tabs.link           # 内容标签链接
+    - content.tooltips             # 工具提示
+    - content.footnote.tooltips   # 脚注工具提示
+    - announce.dismiss            # 公告可关闭
+
+# 额外配置
 extra:
+  # 社交链接
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/CHINAGUOGE/W.S.S-Wiki
+      name: GitHub 仓库
     - icon: fontawesome/brands/qq
       link: https://qm.qq.com/q/NifMztv7GY
+      name: QQ 群
     - icon: fontawesome/solid/envelope
       link: mailto:guoge@51320721.xyz
+      name: 联系邮箱
 
+# 额外样式
 extra_css:
   - stylesheets/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css # 数学公式样式
+  - assets/mid60.css
+  - assets/sas.css
+  - assets/scl90.css
+  - assets/sdq20.css
+  - assets/sds.css
+  - assets/des2.css
+  - assets/brief-scales.css
 
+# 额外脚本
 extra_javascript:
   - https://unpkg.com/katex@0/dist/katex.min.js     # 数学公式脚本
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  - assets/mid60.js
+  - assets/sas.js
+  - assets/scl90.js
+  - assets/sdq20.js
+  - assets/sds.js
+  - assets/des2.js
+  - assets/brief-scales.js
 
+# Markdown 扩展
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
+  - def_list
+  - footnotes
   - md_in_html
   - tables
-  - footnotes
-  - def_list
   - toc:
       permalink: true
+      permalink_title: 链接到本节
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower-ascii
+  - pymdownx.arithmatex:         # 数学公式
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret               # 下划线/上标
+  - pymdownx.mark                # 文本高亮
+  - pymdownx.tilde               # 删除线/下标
+  - pymdownx.critic
   - pymdownx.details
+  - pymdownx.emoji:              # Twemoji 矢量表情支持
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+  - pymdownx.smartsymbols
   - pymdownx.snippets
-  - pymdownx.tabbed:
-      alternate_style: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.caret               # 下划线/上标
-  - pymdownx.tilde               # 删除线/下标
-  - pymdownx.mark                # 文本高亮
-  - pymdownx.emoji:              # 表情支持
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.arithmatex:         # 数学公式
-      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower-ascii
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.details
+  - pymdownx.blocks.html
+  - pymdownx.blocks.definition
+  - pymdownx.blocks.tab
 
+# 插件系统
 plugins:
-  - search
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      lang:
+        - zh
+        - en
+
   - tags                         # 标签系统
-  - blog:                        # 博客功能
+
+  # 博客功能
+  - blog:
       blog_dir: blog
       blog_toc: true
-  - glightbox                    # 图片点击放大
-#  - with-pdf
+
+  # 自动分区页生成工具
+  - gen-files:
+      scripts:
+        - tools/build_partitions_cn.py
+
+  # 图片点击放大查看器
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
+
+  # 代码、样式与 HTML 构建体积极限压缩插件
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+
+  # 开发与工具目录安全隔离
+  - exclude:
+      glob:
+        - tools/**
+        - venv/**
+
+# 其他环境基础配置
+strict: false
+dev_addr: 127.0.0.1:8000
+docs_dir: docs
+site_dir: site

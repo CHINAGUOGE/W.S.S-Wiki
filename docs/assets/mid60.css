@@ -1,0 +1,592 @@
+/* MID-60 交互评估页样式(参考 DES-II 设计) */
+.mid60-app {
+  margin: 0.5rem 0 1.25rem 0;
+}
+
+.mid60-meta {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .5rem 1rem;
+  align-items: center;
+  margin: .25rem 0 1rem 0;
+}
+
+.mid60-actions {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+/* 操作区按钮统一样式（更贴近主流 UI） */
+.mid60-actions .md-button {
+  border-radius: .6rem;
+  padding: .55rem .95rem;
+  font-weight: 600;
+  line-height: 1.1;
+  border: 1px solid transparent;
+  transition: transform .08s ease, box-shadow .12s ease, background-color .15s ease, color .15s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+}
+
+/* 主要操作：导出 */
+.mid60-actions #mid60-export,
+.mid60-actions .md-button--primary {
+  background: linear-gradient(180deg,
+      color-mix(in srgb, var(--md-primary-fg-color) 88%, transparent),
+      var(--md-primary-fg-color));
+  color: #fff;
+}
+.mid60-actions #mid60-export:hover,
+.mid60-actions .md-button--primary:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+.mid60-actions #mid60-export:active,
+.mid60-actions .md-button--primary:active {
+  transform: translateY(0);
+  filter: brightness(.98);
+}
+
+/* 次要操作：重置（描边按钮） */
+.mid60-actions #mid60-reset {
+  background: transparent;
+  color: var(--md-primary-fg-color);
+  border-color: color-mix(in srgb, var(--md-primary-fg-color) 65%, transparent);
+}
+.mid60-actions #mid60-reset:hover {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent);
+}
+.mid60-actions #mid60-reset:active {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 14%, transparent);
+}
+
+/* 键盘可访问性 */
+.mid60-actions .md-button:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--md-primary-fg-color) 24%, transparent);
+}
+
+/* 表格样式 */
+.mid60-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 .6rem;
+  table-layout: fixed;
+}
+
+.mid60-item td {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 5%, transparent);
+  padding: .55rem .6rem;
+  vertical-align: middle;
+  overflow: hidden; /* 避免子元素超出圆角边界 */
+}
+
+[data-md-color-scheme="slate"] .mid60-item td {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, #1b2331);
+}
+
+.mid60-item td:first-child { border-radius: .6rem 0 0 .6rem; }
+.mid60-item td:last-child { border-radius: 0 .6rem .6rem 0; }
+
+.mid60-item .no {
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+.mid60-item label {
+  margin: 0;
+}
+
+.mid60-ctrl {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) auto; /* 滑块优先占满，徽标在右 */
+  align-items: center; /* 桌面端垂直居中 */
+  column-gap: .5rem;
+  row-gap: .25rem;
+  /* 与 DES-II 一致：统一滑块与徽标的垂直偏移 */
+  --slider-offset-y: .13rem;
+  font-size: 0;
+}
+
+.mid60-ctrl input[type="range"] {
+  width: 100%;
+  min-width: 12rem;
+  touch-action: pan-y;
+  /* 统一滑块轨道/拇指尺寸，便于跨浏览器居中计算 */
+  --r-track-h: .56rem; /* 轨道高度 */
+  --r-thumb-d: 1.1rem; /* 拇指直径 */
+  --r-thumb-offset-y: var(--slider-offset-y, .08rem); /* 继承容器偏移 */
+}
+
+/* 更易触控的滑块外观（跨浏览器尽量统一） */
+.mid60-ctrl input[type="range"]::-webkit-slider-runnable-track {
+  height: var(--r-track-h);
+  border-radius: .6rem;
+  background: color-mix(in srgb, var(--md-default-fg-color) 18%, transparent);
+}
+.mid60-ctrl input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 90%, #fff);
+  border: 2px solid color-mix(in srgb, var(--md-primary-fg-color) 65%, transparent);
+  /* 垂直居中 + 细微向下偏移，避免视觉偏高 */
+  margin-top: calc((var(--r-track-h) - var(--r-thumb-d)) / 2 + var(--r-thumb-offset-y));
+  box-shadow: 0 1px 2px rgba(0,0,0,.12);
+}
+.mid60-ctrl input[type="range"]::-moz-range-track {
+  height: var(--r-track-h);
+  border-radius: .6rem;
+  background: color-mix(in srgb, var(--md-default-fg-color) 18%, transparent);
+}
+.mid60-ctrl input[type="range"]::-moz-range-thumb {
+  width: var(--r-thumb-d);
+  height: var(--r-thumb-d);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 90%, #fff);
+  border: 2px solid color-mix(in srgb, var(--md-primary-fg-color) 65%, transparent);
+  box-shadow: 0 1px 2px rgba(0,0,0,.12);
+  transform: translateY(var(--r-thumb-offset-y));
+}
+
+/* 滑块刻度：由 JS 生成 DOM .mid60-slider-wrap + .mid60-marks */
+.mid60-slider-wrap { display: grid; row-gap: 0; width: 100%; }
+/* 取消刻度：无论何种视口均不显示（保留选择器以兼容旧 DOM） */
+.mid60-marks { display: none !important; }
+
+.mid60-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  font-variant-numeric: tabular-nums;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent);
+  color: var(--md-primary-fg-color);
+  padding: .15rem .5rem;
+  border-radius: .5rem;
+  width: 4.8rem; /* 固定宽度，按最大值 100.0% 适配 */
+  justify-content: center;
+  font-size: .95rem;
+  transform: translateY(var(--slider-offset-y, 0));
+}
+
+/* MID-60 使用百分比显示 */
+.mid60-badge::after {
+  content: '%';
+  margin-left: .15rem;
+  opacity: .9;
+}
+
+.mid60-results {
+  margin-top: 1rem;
+  display: grid;
+  gap: .8rem;
+  position: relative; /* 便于导出时定位水印 */
+}
+
+.mid60-progress {
+  height: .8rem;
+  border-radius: .6rem;
+  background: color-mix(in srgb, var(--md-default-fg-color) 8%, transparent);
+  overflow: hidden;
+}
+
+.mid60-progress > .bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4fc08d, #3fb489);
+  transition: width .2s ease;
+}
+
+/* 导出图片水印（仅导出前动态插入） */
+.mid60-watermark {
+  position: absolute;
+  right: .6rem;
+  bottom: .6rem;
+  padding: .15rem .45rem;
+  border-radius: .4rem;
+  font-size: .8rem;
+  line-height: 1.2;
+  color: color-mix(in srgb, var(--md-default-fg-color) 85%, transparent);
+  background: color-mix(in srgb, var(--md-default-fg-color) 8%, transparent);
+  backdrop-filter: blur(2px);
+  opacity: .85;
+  pointer-events: none;
+  user-select: none;
+  z-index: 2;
+}
+
+/* 子量表区域 */
+.mid60-section-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--md-primary-fg-color);
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  padding-bottom: .3rem;
+  border-bottom: 2px solid color-mix(in srgb, var(--md-primary-fg-color) 20%, transparent);
+}
+
+.mid60-subgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: .6rem;
+}
+
+.mid60-subcard {
+  border-radius: .6rem;
+  padding: .55rem .7rem .7rem .7rem;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 5%, transparent);
+}
+
+[data-md-color-scheme="slate"] .mid60-subcard {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, #1b2331);
+}
+
+.mid60-subcard .label {
+  font-weight: 600;
+  margin-bottom: .3rem;
+}
+
+.mid60-subcard .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .6rem;
+  margin-bottom: .4rem;
+}
+
+.mid60-subcard .row .mid60-badge {
+  min-width: 4.2rem;
+}
+
+.mid60-subcard .cutoff {
+  font-size: .8rem;
+  opacity: .7;
+  white-space: nowrap;
+}
+
+.mid60-legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: .75rem;
+  opacity: .8;
+  margin-top: .3rem;
+}
+
+.mid60-note {
+  font-size: .85rem;
+  opacity: .85;
+}
+
+.mid60-hint {
+  font-size: .8rem;
+  opacity: .75;
+}
+
+.mid60-divider {
+  height: 1px;
+  background: color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+  margin: .8rem 0;
+}
+
+.mid60-table th, .mid60-table td {
+  padding: .35rem .4rem;
+}
+
+.mid60-table tr:hover { background: transparent; }
+
+/* ========== 响应式(手机端) ========== */
+@media (max-width: 760px) {
+  .mid60-table {
+    table-layout: auto;
+    border-spacing: 0 .5rem;
+  }
+
+  .mid60-item td {
+    padding: .5rem .5rem;
+  }
+
+  .mid60-item td:first-child { width: 1.6rem; }
+  .mid60-item td:last-child { width: clamp(8.5rem, 38vw, 12rem); }
+  .mid60-table colgroup col:first-child { width: 1.6rem !important; }
+  .mid60-table colgroup col:last-child { width: clamp(8.5rem, 38vw, 12rem) !important; }
+
+  .mid60-ctrl {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: .4rem .5rem;
+  }
+
+  .mid60-ctrl input[type="range"] {
+    width: 100%;
+    min-width: 7rem;
+  }
+
+  .mid60-badge {
+    width: 4.8rem; /* 移动端同样固定，避免跳动 */
+    padding: .1rem .35rem;
+    font-size: .9rem;
+  }
+
+  .mid60-item td:nth-child(2) {
+    word-break: break-word;
+    white-space: normal;
+    line-height: 1.5;
+  }
+
+  .mid60-legend { font-size: .7rem; }
+  .mid60-subgrid { grid-template-columns: 1fr; }
+  .mid60-section-title { font-size: .95rem; }
+
+  /* ========== 手机端深色卡片式布局 ========== */
+
+  /* 隐藏原有的分组标题 */
+  .mid60-results .mid60-section-title {
+    display: none;
+  }
+
+  /* 结果区域改为卡片流布局 */
+  .mid60-results {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* 每个分组转为深色卡片 */
+  .mid60-subgrid {
+    display: block;
+    background: #1e2228;
+    border-radius: 16px;
+    padding: 20px 16px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* 亮色主题适配 */
+  [data-md-color-scheme="default"] .mid60-subgrid {
+    background: #f5f5f5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  /* 分组标题 - 带图标风格 */
+  .mid60-subgrid .mid60-group-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #ffffff;
+    margin-bottom: 16px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  /* 亮色主题下标题颜色 */
+  [data-md-color-scheme="default"] .mid60-subgrid .mid60-group-title {
+    color: #1e293b;
+  }
+
+  /* 为不同组别添加图标 */
+  .mid60-subgrid .mid60-group-title::before {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  /* DID/OSDD 组 */
+  .mid60-subgrid .mid60-group-title[data-group="did-osdd"]::before {
+    content: '🧠';
+  }
+
+  /* 人格解体/现实解体 */
+  .mid60-subgrid .mid60-group-title[data-group="dpdr"]::before {
+    content: '☁️';
+  }
+
+  /* 解离性失忆 */
+  .mid60-subgrid .mid60-group-title[data-group="amnesia"]::before {
+    content: '🧩';
+  }
+
+  /* PTSD */
+  .mid60-subgrid .mid60-group-title[data-group="ptsd"]::before {
+    content: '⚡';
+  }
+
+  /* 功能性神经症状障碍 */
+  .mid60-subgrid .mid60-group-title[data-group="fnsd"]::before {
+    content: '🔧';
+  }
+
+  /* 一般解离 */
+  .mid60-subgrid .mid60-group-title[data-group="general"]::before {
+    content: '🌀';
+  }
+
+  /* 子量表项重置 */
+  .mid60-subcard {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 14px;
+  }
+
+  .mid60-subcard:last-child {
+    margin-bottom: 0;
+  }
+
+  /* 隐藏进度条 */
+  .mid60-subcard .mid60-progress {
+    display: none;
+  }
+
+  /* 子项行布局 */
+  .mid60-subcard .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0;
+    padding: 10px 0;
+    position: relative;
+  }
+
+  /* 左侧标签 */
+  .mid60-subcard .label {
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+    color: #e4e4e7;
+    transition: color 0.2s ease;
+    flex: 1;
+  }
+
+  /* 亮色主题下标签颜色 */
+  [data-md-color-scheme="default"] .mid60-subcard .label {
+    color: #334155;
+  }
+
+  /* 右侧数值 */
+  .mid60-subcard .row .mid60-badge {
+    min-width: auto;
+    width: auto;
+    background: transparent;
+    color: #71717a;
+    padding: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  /* 亮色主题下数值颜色 */
+  [data-md-color-scheme="default"] .mid60-subcard .row .mid60-badge {
+    color: #64748b;
+  }
+
+  /* 隐藏临界值文字 */
+  .mid60-subcard .cutoff {
+    display: none;
+  }
+
+  /* 移除百分号后缀 */
+  .mid60-subcard .row .mid60-badge::after {
+    content: none;
+  }
+
+  /* 超阈值样式 */
+  .mid60-subcard.over-threshold .label {
+    color: #fca5a5;
+  }
+
+  .mid60-subcard.over-threshold .row .mid60-badge {
+    color: #ef4444;
+    font-weight: 700;
+  }
+  /* 超阈值：给左侧加一条红竖线，更容易截图看出来 */
+  .mid60-subcard.over-threshold .row {
+    border-left: 3px solid #ef4444;
+    padding-left: 12px; /* 抵消一下 */
+  }
+
+  /* 正常范围样式 */
+  .mid60-subcard:not(.over-threshold) .row .mid60-badge {
+    color: #71717a;
+  }
+
+  /* 卡片底部状态总结 */
+  .mid60-subgrid .mid60-group-summary {
+    margin-top: 16px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.5;
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+  }
+
+  /* 超标状态样式会由JS动态修改文本内容 */
+}
+
+/* 更窄屏进一步优化 */
+@media (max-width: 600px) {
+  /* 将题号放入卡片内部显示（使用 CSS 计数器生成） */
+  .mid60-table tbody { counter-reset: mid60; }
+  .mid60-table thead { display: none; }
+  /* 适当增大行距 */
+  .mid60-table { border-spacing: 0 .85rem; width: 100% !important; }
+  .mid60-table colgroup, .mid60-table colgroup col { display: none !important; width: auto !important; }
+  .mid60-table tr.mid60-item { display: block; }
+  .mid60-table td { display: block; width: 100% !important; }
+
+  /* 卡片之间增加外边距 */
+  .mid60-item { margin: 0 0 .85rem 0; }
+  .mid60-item td { border-radius: 0; padding: .6rem .6rem; }
+  /* 隐藏原第一列数字 */
+  .mid60-item td:first-child { display: none !important; }
+  /* 题号徽标：用伪元素添加到描述卡片左上角 */
+  /* 徽标与题目间距加大 */
+  .mid60-item td:nth-child(2) { position: relative; padding-left: 2.8rem; }
+  .mid60-item td:nth-child(2)::before {
+    counter-increment: mid60;
+    content: counter(mid60);
+    position: absolute;
+    top: .55rem;
+    left: .6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    min-width: 1.6rem;
+    height: 1.3rem;
+    padding: 0 .25rem;
+    border-radius: .4rem;
+    background: color-mix(in srgb, var(--md-primary-fg-color) 16%, transparent);
+    color: var(--md-primary-fg-color);
+    font-weight: 700;
+    line-height: 1;
+    box-shadow: 0 1px 2px rgba(0,0,0,.08);
+  }
+  .mid60-item td:nth-child(2) { border-radius: .6rem .6rem 0 0; }
+  .mid60-item td:last-child {
+    border-top: 1px solid color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+    border-radius: 0 0 .6rem .6rem;
+    width: 100% !important;
+    padding-top: .7rem; /* 题目与滑块区垂直间距增大 */
+  }
+
+  .mid60-ctrl {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .45rem .5rem;
+    align-items: center; /* 取消 start，居中与徽标对齐 */
+  }
+  .mid60-ctrl input[type="range"] { width: 100%; min-width: 0; }
+  .mid60-badge { width: 4.8rem; justify-self: end; align-self: center; }
+  .mid60-subgrid { grid-template-columns: 1fr; }
+}

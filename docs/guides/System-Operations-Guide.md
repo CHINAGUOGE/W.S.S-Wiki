@@ -1,0 +1,148 @@
+---
+tags:
+
+    - ops:系统运作
+
+topic: 系统运作
+title: 系统运作导览
+description: 按“系统运作”主题整合前台调度、切换管理、意识与记忆协作、结构治理与外部互动的核心词条，提供可扫描导航与安全实践提示。
+updated: 2025-10-22
+comments: true
+search:
+  boost: 1.5
+---
+
+# 🧭 系统运作导览
+
+!!! info "Clinician’s Summary｜核心要点速览"
+    本导览聚焦多意识体在日常生活中的 **协作、切换与治理**：
+
+    - 以「概念—操作—安全」为主线，覆盖 **前台与切换管理**、**意识体验与记忆协作**、**结构类型与治理策略**、**身体与外部互动** 等。
+    - 建议以 **安全、可逆、小步推进** 为原则；出现明显痛苦或功能下降时，优先 **暂停—接地—复盘**。
+
+---
+
+## 🧱 核心概念与理论框架
+
+> 为系统运作提供术语基准与结构理解的“底座”。
+
+- 📚 [多意识体系统（Multiple Personality System, MPS）](../心理相关/Multiple_Personality_System.md)：界定多意识体现象与社群语境，梳理常见结构与实践。
+- 🏠 [系统（System）](../心理相关/System.md)：系统组成、边界与日常协调需求。
+- 🧩 [解离（Dissociation）](../心理相关/Dissociation.md)：解离连续体与对系统运作的影响。
+- 🧠 [神经多样性（Neurodiversity）](../心理相关/Neurodiversity.md)：以差异视角理解个体差异与共病交集。
+- 🧬 [结构性解离理论](../心理相关/Structural-Dissociation-Theory.md)：ANP/EP 架构与治疗启示。
+- ⚖️ [ANP-EP 模型](../心理相关/Apparently-Normal-Part-Emotional-Part-Model.md)：在协作与干预中的应用。
+- 🧭 [ANP/EP 常见功能类型](../心理相关/ANP-EP-Functional-Roles.md)：基于结构性解离的功能分工速览，协助识别切换风险与分担方式。
+
+---
+
+## 🎛️ 前台与切换管理
+
+> 管理身体控制权、信息交接与风险的“中控层”。
+
+- 🎙️ [前台（Front / Fronting）](../心理相关/Front-Fronting.md)：取得与交接控制权的要点。
+- 🔁 [切换（Switch）](../心理相关/Switch.md)：触发条件、注意事项与安全策略。
+- 🧷 [锚点（Anchors / Tells / Markers）](../心理相关/Anchors.md)：识别"当下前台是谁"的外显线索（**仅供内部协作，非诊断**）。
+- 🧯 [卡前台（Front Stuck / Frontstuck）](../心理相关/Frontstuck.md)：无法退下或切换受阻的应对。
+- 👥 [共前台（Co-Fronting）](../心理相关/Co-Fronting.md)：多人并行执掌的分工与风险。
+- 🫸 [被动影响（Passive Influence）](../心理相关/Passive-Influence.md)：主导权未完全切换，但出现明显内部推动、干扰或挤压感时的识别与处理。
+- 🌫️ [前台模糊（Front Blur）](../心理相关/Front-Blur.md)：无法确定谁在前台的状态识别与应对。
+- 🌀 [混合（Blending）](../心理相关/Blending.md)：（社群用语，非诊断）边界模糊、记忆渗透的识别与处置。
+- 🧪 [ANP–EP 混溶（ANP–EP Blending）](../心理相关/ANP-EP-Blending.md)：结构性解离语境下，日常执行者与创伤反应者暂时交叠时的识别与稳定策略。
+- 👁️ [观察者 ANP 切换（Observer ANP Switch）](../心理相关/Observer-ANP-Switch.md)：高监控状态下的过渡型接管，适合放在“差点失控但仍需维持功能”的语境中理解。
+- 🧭 [并行（Parallelism）](../心理相关/Parallelism.md)：多条意识流同时运行时的负荷管理。
+- 🔙 [后台（Back / Being Back）](../心理相关/Back-Being-Back.md)：退到后台后的支持方式。
+- 🤖 [自动驾驶（Autopilot）](../心理相关/Autopilot.md)："机械操作"状态与恢复觉察。
+- 🪖 [头压（Head Pressure）](../心理相关/Head-Pressure.md)：常见生理体验与缓解方法。
+- ⚖️ [偏重（Median / Bias）](../心理相关/Median-Bias.md)：执掌权偏向的识别与调节。
+- ✋ [附体（Possession）](../心理相关/Possession.md)：控制权让渡与协作式接管的风险、边界与安全前提。
+- 🚨 [触发（Trigger）](../心理相关/Trigger.md)：触发源识别与预防措施。
+
+---
+
+## 🧠 意识体验与记忆协作
+
+> 促进「看见彼此、共享关键信息」的“通信层”。
+
+- 👀 [意识共存（Co-Consciousness）](../心理相关/Co-Consciousness.md)：维持多人同时觉察的技巧。
+- 🗂️ [内部沟通](../心理相关/Internal-Communication.md)：信息交换、会议与日志工具。
+- 🪄 [内部空间（Headspace / Inner World）](../心理相关/Headspace-Inner-World.md)：内部世界的建设与维护。
+- 🏞️ [幻境（Wonderland）](../心理相关/Wonderland.md)：Tulpa 与内部空间语境中常见的可视化场景搭建与维持方式。
+- 🎨 [内视（Visualization / Imagination）](../心理相关/Visualization-Imagination.md)：心像支持沟通与记忆。
+- 🕳️ [失忆（Amnesia）](../心理相关/Amnesia.md)：时间缺失、成员间记忆隔离与交接失败的基础概念。
+- 🧳 [独有记忆（Exomemory）](../心理相关/Exomemory.md)：非当前生命史的叙事性记忆体验之机制与处理。
+- 🛡️ [记忆屏蔽（Memory Shielding）](../心理相关/Memory-Shielding.md)：何时建立屏障、如何安全解除。
+- 🔄 [记忆回退（Memory Rollback）](../心理相关/Memory-Rollback.md)：当下体验被旧记忆框架覆盖时的定向与安全策略。
+- 🧷 [独立性（Independence）](../心理相关/Independence.md)：评估成员自主程度与界限。
+- 🌡️ [存在感（Sense of Presence）](../心理相关/Sense-Of-Presence.md)：在场与否的体感线索。
+- 🧪 [功能性分离（Functional Dissociation）](../心理相关/Functional-Dissociation.md)：区分工作分流与病理性解离。
+- 🧰 [意识修改（Consciousness Modification）](../心理相关/Consciousness-Modification.md)：改变意识状态的策略与风险。
+- 🔁 [迭代（Iteration）](../心理相关/Iteration.md) & [重构（Reconstruction）](../心理相关/Reconstruction.md)：对内部结构的持续优化。
+- 🧸 [退行（Regression）](../心理相关/Regression.md)：区分年龄退行与儿童人格的功能。
+- 💭 [侵入性思维](../心理相关/Intrusive-Thoughts.md)：应对突发的念头、影像或语句；区分侵入性记忆与闪回。
+- 🧠 [侵入性记忆](../心理相关/Intrusive-Memory.md)：创伤相关的记忆闯入，区分与闪回、思维。
+- ⚠️ [灾难预演（Disaster Rehearsal）](../心理相关/Disaster-Rehearsal.md)：未来导向的灾难性意象；比较闪回、侵入性思维并提供快速区分表。
+- 🎯 [过度专注（Hyperfocus）](../心理相关/Hyperfocus.md)：注意“黏附”与抽离困难；区分心流与解离，提供切换策略。
+- 🧊 [心流（Flow）](../心理相关/Flow.md)：主动、适配且可控的最佳专注体验；与过度专注、解离区分。
+- 🌊 [情绪传染（Emotional Contagion）](../心理相关/Emotional-Contagion.md)：成员间情绪扩散与连锁触发的识别、边界与缓冲策略。
+- 🥴 [醉酒解离](../心理相关/Alcohol-Induced-Dissociation.md)：似醉非饮的主观体验与稳定策略。
+- 🪞 [非我感（Not-me Feeling）](../心理相关/Not-Me-Feeling.md) · [去人格化（Depersonalization）](../心理相关/Depersonalization.md) · [去现实化](../心理相关/Derealization.md)：区分成员边界感、自我疏离与外界失真。
+
+---
+
+## 🏗️ 结构类型与治理策略
+
+> 设计规则、分配权限与推进整合的“治理层”。
+
+- 🧩 [子系统（Subsystem）](../心理相关/Subsystem.md)：内部子系统的结构与协作。
+- 🗺️ [弦羽理论生态位分类法](../心理相关/Xianyu-Theory-Niche-Classification.md)：国内社群常见的系统类型划分。
+- 🧭 [单一类系统](../心理相关/Single-Class-Systems-Xianyu.md) · [混合型系统](../心理相关/Mixed-Systems-Xianyu.md) · [系魂型系统](../心理相关/Soul-Linked-Systems-Xianyu.md) · [家族式系统](../心理相关/Family-Systems-Xianyu.md)：主要生态位的差异与侧重。
+- 📦 [封存（Sequestration）](../心理相关/Sequestration.md)：隔离成员或记忆的条件与风险。
+- 🔐 [权限（Permissions）](../心理相关/Permissions.md)：授权、边界与冲突预防。
+- 🤝 [融合（Fusion）](../心理相关/Fusion.md) & [整合（Integration）](../心理相关/Integration.md)：成员合并或协作整合的路径。
+
+!!! warning "安全与自愿前提"
+    推进 **融合/整合** 应以 **安全、稳定与自愿** 为前提；以 **功能与生活质量** 为首要指标，采用 **小步—评估—回顾** 节奏，允许 **随时暂停或回滚**。若出现强烈不适或负荷上升，请优先使用[接地（Grounding）](../心理相关/Grounding.md)与既定安全计划。
+
+---
+
+## 🧍 身体与外部互动
+
+> 连接“内在体验—现实生活”的桥接层。
+
+- 🧠 [躯体认同（Body Ownership）](../心理相关/Body-Ownership.md)：身体认同感与现实感的变化。
+- 🔭 [外投射（External Projection）](../心理相关/External-Projection.md)：将内部体验外化的方式与沟通边界。
+- ⚔️ [战/逃模式（Fight-or-Flight）](../心理相关/Fight-or-Flight.md)：交感神经驱动的急性防御反应，识别局限并规划事后调节。
+- ⚡ [应激反应（Stress Response）](../心理相关/Stress-Response.md)：心理-生理机制（ANS/HPA）与自我调节策略。
+- 📈 [触发因素与压力累积](../心理相关/Trigger-vs-Stress-Accumulation.md)：帮助区分“被具体线索点燃”与“长期负荷把阈值压低”的两种失稳路径。
+- 🎭 [角色面具（Masking / Social Masking）](../心理相关/Masking.md)：以单一外观维持安全与功能；过度使用的代价与减负办法。
+
+---
+
+## 🗣️ 语言与文化背景
+
+> 理解跨社群语境下的沟通方式与术语来源。
+
+- 🗨️ [T 语（Tulpish）](../心理相关/Tulpish.md)：Tulpa—宿主的专用沟通方式与训练要点。
+
+---
+
+## 🧩 使用建议
+
+!!! tip "如何高效使用本导览"
+
+    1. **定位需求**：先判断当前是前台调度、内部沟通还是结构治理问题。
+    2. **建立共享文档**：结合《[内部沟通](../心理相关/Internal-Communication.md)》《[独有记忆](../心理相关/Exomemory.md)》记录关键收获，供成员共用。
+    3. **交叉参考**：切换管理常涉角色职责，配合《[角色与身份导览](Roles-Identity-Guide.md)》；若触发创伤反应，参见《[创伤与疗愈导览](Trauma-Healing-Guide.md)》。
+    4. **定期回顾**：系统状态动态变化，建议 **每季度** 审视策略是否仍适用。
+
+---
+
+> 🧩 **总结**
+> 把系统运作视作“多层网络”的持续协作：**中控（前台/切换）—通信（意识/记忆）—治理（结构/规则）—桥接（身体/外部）**。
+> 以 **安全 × 可逆 × 小步迭代** 为原则，才能在复杂日常中实现稳态与共同成长。
+
+---
+
+!!! tip "版权说明"
+    本内容来源于Multiple Personality System Wiki - 多意识体系统百科，MPS Team版权所有。
