@@ -1,0 +1,10 @@
+# ── W.S.S Wiki robots.txt ──
+# 站点: https://wiki.51320721.xyz
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /tags/
+
+# Sitemap 位置
+Sitemap: https://wiki.51320721.xyz/sitemap.xml

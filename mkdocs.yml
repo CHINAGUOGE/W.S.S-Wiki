@@ -1,5 +1,8 @@
-site_name: W.S.S-Wiki
+site_name: W.S.S Wiki - 心理健康知识库
 site_url: https://wiki.51320721.xyz
+site_description: 暖源社（W.S.S）心理健康知识库 — DID/OSDD 解离性身份障碍、创伤疗愈、多意识体系统（MPS）中文百科与社区
+site_author: GES | W.S.S 矩阵
+copyright: Copyright &copy; 2026 GES | W.S.S 矩阵. 内容来源于 MPS Wiki
 repo_url: https://github.com/CHINAGUOGE/W.S.S-Wiki
 repo_name: CHINAGUOGE/W.S.S-Wiki
 
@@ -73,17 +76,28 @@ theme:
 
 # 额外配置
 extra:
+  # SEO: 隐藏 "Made with Material for MkDocs" 标志，减少页面膨胀
+  generator: false
+
+  # SEO: 社交分享卡片图片（相对于 site_dir，也可用完整 URL）
+  social_card_image: assets/logo1.png
+
   # 社交链接
   social:
-    - icon: fontawesome/brands/github 
+    - icon: fontawesome/brands/github
       link: https://github.com/CHINAGUOGE/W.S.S-Wiki
-      name: GitHub 仓库
+      name: W.S.S Wiki on GitHub
     - icon: fontawesome/brands/qq
       link: https://qm.qq.com/q/NifMztv7GY
-      name: QQ 群
+      name: QQ 群「彼岸」
     - icon: fontawesome/solid/envelope
       link: mailto:guoge@51320721.xyz
       name: 联系邮箱
+
+  # SEO: Google Analytics 4（可选 — 不配置不影响 SEO）
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX  # ← 替换为你的 GA4 测量 ID
 
 # 额外样式
 extra_css:
@@ -167,6 +181,18 @@ markdown_extensions:
 
 # 插件系统
 plugins:
+  # SEO: sitemap.xml 由 tools/gen_sitemap.py 通过 gen-files 插件在构建时生成
+  # 如需使用内置 sitemap 插件，安装: pip install mkdocs-sitemap-plugin（第三方）
+  # - sitemap
+
+  # SEO: 自动生成社交分享卡片（OG Image）—— 需要安装 pillow + cairosvg
+  # 如果构建报错就先注释掉
+  # - social:
+  #     cards_layout: default
+  #     cards_color:
+  #       scheme: teal
+  #       accent: indigo
+
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
       lang:
@@ -180,7 +206,7 @@ plugins:
       blog_dir: blog
       blog_toc: true
 
-  # 自动分区页生成工具
+  # 自动分区页生成工具（sitemap 由 Material 主题自动生成）
   - gen-files:
       scripts:
         - tools/build_partitions_cn.py

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+
+  {# ── 全局关键词 ── #}
+  <meta name="keywords" content="DID,OSDD,解离性身份障碍,多重人格,心理健康,创伤疗愈,CPTSD,多意识体,MPS,解离障碍,心理量表,Tulpa" />
+
+  {# ── Open Graph ── #}
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <meta property="og:title" content="{% block og_title %}{{ page.title | default(config.site_name) }}{% endblock %}" />
+  {% if page and page.meta and page.meta.description %}
+    <meta property="og:description" content="{{ page.meta.description }}" />
+  {% else %}
+    <meta property="og:description" content="暖源社（W.S.S）心理健康知识库 — 解离性身份障碍（DID/OSDD）、创伤疗愈、多意识体系统（MPS）中文百科。" />
+  {% endif %}
+  <meta property="og:url" content="{{ page.canonical_url | default(config.site_url) }}" />
+  <meta property="og:type" content="{% if page and page.url and page.url.startswith('blog/') %}article{% else %}website{% endif %}" />
+  <meta property="og:locale" content="zh_CN" />
+  {% set og_image = config.extra.social_card_image | default('assets/logo1.png') %}
+  <meta property="og:image" content="{{ config.site_url }}{{ og_image }}" />
+
+  {# ── Twitter Card ── #}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title | default(config.site_name) }}" />
+  {% if page and page.meta and page.meta.description %}
+    <meta name="twitter:description" content="{{ page.meta.description }}" />
+  {% else %}
+    <meta name="twitter:description" content="暖源社（W.S.S）心理健康知识库" />
+  {% endif %}
+  <meta name="twitter:image" content="{{ config.site_url }}{{ og_image }}" />
+
+  {# ── JSON-LD 结构化数据：WebSite ── #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ config.site_name }}",
+    "url": "{{ config.site_url }}",
+    "description": "暖源社（W.S.S）心理健康知识库 — 解离性身份障碍（DID/OSDD）、创伤疗愈、多意识体系统（MPS）中文百科。",
+    "inLanguage": "zh-CN",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "{{ config.site_url }}?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  {# ── JSON-LD 结构化数据：BreadcrumbList ── #}
+  {% if page and page.parents %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "{{ config.site_url }}"
+      },
+      {%- for parent in page.parents %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index + 1 }},
+        "name": "{{ parent.title }}",
+        "item": "{{ parent.canonical_url }}"
+      }{{ "," if not loop.last else "" }}
+      {%- endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+
+  {# ── 告诉搜索引擎优先索引本站 ── #}
+  <link rel="canonical" href="{{ page.canonical_url | default(config.site_url) }}" />
+{% endblock %}
